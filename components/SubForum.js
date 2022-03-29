@@ -85,8 +85,8 @@ function SubForum() {
           entertainment
         </h2>
         <div className=" flex flex-row sm:flex-col flex-wrap ">
-          {entertainment.map(({ name, link }) => (
-            <SubForumLink name={name} link={link} />
+          {entertainment.map((id,{ name, link }) => (
+            <SubForumLink name={name} link={link} key={id} />
           ))}
         </div>
       </div>
@@ -96,8 +96,8 @@ function SubForum() {
           Tech
         </h2>
         <div className=" flex flex-row sm:flex-col flex-wrap ">
-          {general.map(({ name, link }) => (
-            <SubForumLink name={name} link={link} />
+          {general.map((id,{ name, link }) => (
+            <SubForumLink name={name} link={link} key={id}/>
           ))}
         </div>
       </div>
@@ -107,8 +107,8 @@ function SubForum() {
           jobs
         </h2>
         <div className=" flex flex-row sm:flex-col flex-wrap ">
-          {general.map(({ name, link }) => (
-            <SubForumLink name={name} link={link} />
+          {general.map((id,{ name, link }) => (
+            <SubForumLink name={name} link={link} key={id}/>
           ))}
         </div>
       </div>
