@@ -74,8 +74,8 @@ function SubForum() {
       <div className='py-1'>
         <h2 className="font-black  sm:text-xl text-green-900">General</h2>
         <div className=" flex flex-row sm:flex-col flex-wrap ">
-          {general.map(({ name, link }) => (
-            <SubForumLink name={name} link={link} />
+          {general.map((id,{ name, link }) => (
+            <SubForumLink name={name} link={link} key={id}/>
           ))}
         </div>
       </div>
