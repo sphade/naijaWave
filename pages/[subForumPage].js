@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-function subPage() {
+function SubPage() {
     const router = useRouter();
     const { subForumPage } = router.query;
   return (
@@ -10,4 +10,4 @@ function subPage() {
   );
 }
 
-export default subPage;
+export default SubPage;
